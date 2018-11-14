@@ -1,0 +1,53 @@
+/*
+.navbar-default{
+    background-color:red !important;
+    color:whitesmoke !important;
+}
+
+
+.navbar{
+    margin-bottom: 20px !important;
+}
+
+.navbar-brand{
+    background-color:orange;
+    margin-left:30% !important;
+}
+*/
+
+body{
+    background-color: #eee;
+}
+
+img{
+    max-width: 5%;
+    max-height:5%
+}
+/*
+p{
+    font-size:15px !important;
+}
+*/
+.panel-heading{
+    padding:10;
+    background-color:rgba(163, 113, 20, 0.877) !important;
+    color:gainsboro !important;
+}
+
+h3{
+    color:green;
+}
+
+h2{
+    color:rgba(163, 113, 20, 0.877);
+}
+
+.jumbotron{
+    background-color: white!important;
+    margin-left: 10px;
+}
+
+.img-fluid{
+    max-height:50% !important;
+    max-width:50%  !important;
+}
