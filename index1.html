@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belly Button Biodiversity </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                    <img src="{{ url_for('static',filename='img/bacteria_by_filterforgedotcom.jpg') }}">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>         
+                </button>
+                <a style="color:green" class="navbar-brand" href=#>
+                Belly Button Biodiversity
+                </a>
+            </div>
+                
+               
+        </div> <!-- /.container-fluid --> 
+    </nav>
+
+
+    <div class="container-fluid col-md-12">
+            <div class="jumbotron" style="text-align: center">
+                <div class="row">
+                    <h1>Belly Button Biodiversity Dashboard</h1>
+                    <p>Interactive sample visualization</p>
+                    <p>Select a sample</p>
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                </div>
+            </div>
+
+                <div class="row">
+                
+                    <div class="col-md-2">
+                            
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" id="sample_id"></h4>
+                            </div>
+                            <div class=panel-body id="meta_data"></div>
+                        </div>
+                        
+                    </div>
+        
+    
+                    <div class="col-md-6">
+                       
+                        <div id="plot"></div>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <div id="dialweek"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12" style="margin-top:20px">
+                    
+                    <div id="scatter"></div>
+                    </div>
+                </div>
+           
+
+            </div>
+        </div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/plotly.js') }}"></script> 
+    <!--<script src="../static/js/app.js"></script>-->
+
+</body>
+</html>
